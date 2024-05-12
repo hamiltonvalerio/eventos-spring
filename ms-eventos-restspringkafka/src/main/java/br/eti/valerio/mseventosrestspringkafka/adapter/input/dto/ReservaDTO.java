@@ -8,15 +8,17 @@ public class ReservaDTO {
     private String nomeEvento;
     private String nomeCliente;
     private LocalDateTime dataReserva;
+    private String status;
 
     public ReservaDTO() {
     }
 
-    public ReservaDTO(Long id, String nomeEvento, String nomeCliente, LocalDateTime dataReserva) {
+    public ReservaDTO(Long id, String nomeEvento, String nomeCliente, LocalDateTime dataReserva, String status) {
         this.id = id;
         this.nomeEvento = nomeEvento;
         this.nomeCliente = nomeCliente;
         this.dataReserva = dataReserva;
+        this.status = status;
     }
 
     public Long getId() {
@@ -49,5 +51,13 @@ public class ReservaDTO {
 
     public void setDataReserva(LocalDateTime dataReserva) {
         this.dataReserva = dataReserva;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

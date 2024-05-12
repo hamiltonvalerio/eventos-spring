@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/reserva")
+@RequestMapping("/reserva")
 public class ReservaController {
 
     private final ReservaUseCasePort reservaUseCasePort;
@@ -20,7 +20,7 @@ public class ReservaController {
         this.reservaUseCasePort = reservaUseCasePort;
     }
 
-    @PostMapping
+    @PostMapping("/salvar")
     @Operation(summary = "Criar nova reserva")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Reserva  criada"),
@@ -31,7 +31,7 @@ public class ReservaController {
         return ResponseEntity.ok(dto);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/buscar/{id}")
     @Operation(summary = "Buscar reserva por id")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Reserva encontrada"),

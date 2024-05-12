@@ -21,4 +21,9 @@ public class ReservaAdapter implements ReservaPort {
     public Reserva salvarReserva(Reserva reserva) {
         return reservaRepository.save(reserva);
     }
+
+    @Override
+    public Reserva buscarReserva(String id) {
+        return reservaRepository.findById(Long.valueOf(id)).orElse(null);
+    }
 }

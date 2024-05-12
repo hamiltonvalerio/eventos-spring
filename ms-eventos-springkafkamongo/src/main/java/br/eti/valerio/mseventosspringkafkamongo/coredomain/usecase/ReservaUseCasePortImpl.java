@@ -24,7 +24,7 @@ public class ReservaUseCasePortImpl implements ReservaUseCasePort {
 
     @Override
     public ReservaDTO buscarReserva(String id) {
-        return null;
+        return MapperReserva.INSTANCE.toReservaDTO(reservaPort.buscarReserva(id));
     }
 
     @Override
