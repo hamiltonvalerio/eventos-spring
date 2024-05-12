@@ -2,7 +2,7 @@ package br.eti.valerio.mseventosrestspringkafka.coredomain.usecase;
 
 import br.eti.valerio.mseventosrestspringkafka.adapter.input.dto.ReservaDTO;
 import br.eti.valerio.mseventosrestspringkafka.adapter.input.mapper.MapperReserva;
-import br.eti.valerio.mseventosrestspringkafka.adapter.output.kafka.producer.ReservaProducer;
+import br.eti.valerio.mseventosrestspringkafka.application.ports.in.ReservaProducer;
 import br.eti.valerio.mseventosrestspringkafka.application.ports.in.ReservaUseCasePort;
 import br.eti.valerio.mseventosrestspringkafka.application.ports.out.ReservaPort;
 import br.eti.valerio.mseventosrestspringkafka.coredomain.entity.Reserva;

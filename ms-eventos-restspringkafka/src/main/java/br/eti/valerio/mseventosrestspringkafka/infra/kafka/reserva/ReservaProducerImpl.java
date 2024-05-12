@@ -1,6 +1,6 @@
 package br.eti.valerio.mseventosrestspringkafka.infra.kafka.reserva;
 
-import br.eti.valerio.mseventosrestspringkafka.adapter.output.kafka.producer.ReservaProducer;
+import br.eti.valerio.mseventosrestspringkafka.application.ports.in.ReservaProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
